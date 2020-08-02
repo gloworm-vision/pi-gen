@@ -181,6 +181,10 @@ export TIMEZONE_DEFAULT="${TIMEZONE_DEFAULT:-Europe/London}"
 
 export GIT_HASH=${GIT_HASH:-"$(git rev-parse HEAD)"}
 
+export PHOTONVISION_JAR_URL
+
+export CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+
 export CLEAN
 export IMG_NAME
 export APT_PROXY

@@ -11,6 +11,10 @@ install -m 644 files/console-setup   	"${ROOTFS_DIR}/etc/default/"
 
 install -m 755 files/rc.local		"${ROOTFS_DIR}/etc/"
 
+mkdir -p "${ROOTFS_DIR}/opt/photonvision"
+curl -sL "${PHOTONVISION_JAR_URL}" --output "${ROOTFS_DIR}/opt/photonvision/photonvision.jar"
+install -m 644 files/photonvision.service "${ROOTFS_DIR}/lib/systemd/system/"
+
 on_chroot << EOF
 systemctl disable hwclock.sh
 systemctl disable nfs-common
@@ -20,6 +24,8 @@ if [ "${ENABLE_SSH}" == "1" ]; then
 else
 	systemctl disable ssh
 fi
+systemctl enable pigpiod
+systemctl enable photonvision
 systemctl enable regenerate_ssh_host_keys
 EOF
 

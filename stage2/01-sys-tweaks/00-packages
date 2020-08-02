@@ -29,3 +29,7 @@ ntfs-3g
 pciutils
 rpi-eeprom
 raspinfo
+ntp
+pigpiod pigpio
+default-jdk
+vim
