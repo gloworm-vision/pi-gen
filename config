@@ -8,4 +8,4 @@ TIMEZONE_DEFAULT=America/Los_Angeles
 DEPLOY_ZIP=0
 PRESERVE_CONTAINER=0
 CONTINUE=0
-PHOTONVISION_JAR_URL=https://github.com/PhotonVision/photonvision/releases/download/Dev/photonvision-dev-1-ge2768ea.jar
+PHOTONVISION_JAR_URL=https://github.com/PhotonVision/photonvision/releases/download/v2020.9.1-alpha/photonvision-v2020.9.1-alpha.jar
