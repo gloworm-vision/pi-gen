@@ -4,5 +4,5 @@
   "staticIp" : "",
   "netmask" : "",
   "hostname" : "gloworm",
-  "shouldManage" : false
+  "shouldManage" : true
 }
