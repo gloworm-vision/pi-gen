@@ -33,3 +33,4 @@ ntp
 pigpiod pigpio
 default-jdk
 vim
+libtbb2
