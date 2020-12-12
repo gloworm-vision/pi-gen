@@ -7,7 +7,7 @@ max_framebuffers=2
 
 [all]
 start_x=1
-gpu_mem=128
+gpu_mem=256
 dtoverlay=enc28j60
 dtoverlay=pi3-disable-bt
 gpio=45=op,dh
